@@ -7,13 +7,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: '#F38B1B',
-        'text-primary': '#33373A',
-        'text-muted': '#6B7280',
+        brand: '#3B82F6',
+        'brand-dark': '#1D4ED8',
+        'brand-deep': '#0B2C8A',
+        'brand-light': '#93C5FD',
+        'brand-soft': '#E1EDFF',
+        'text-primary': '#0F172A',
+        'text-muted': '#4C5D7A',
         bg: '#FFFFFF',
-        'bg-subtle': '#F5F6F7',
+        'bg-subtle': '#F3F6FF',
         card: '#FFFFFF',
-        border: '#E5E7EB',
+        border: '#C5D6FF',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

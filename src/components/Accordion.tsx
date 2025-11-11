@@ -18,12 +18,12 @@ const Accordion = ({ items }: AccordionProps) => {
       {items.map((item) => {
         const isOpen = item.id === openItem;
         return (
-          <div key={item.id} className="rounded-2xl border border-border/70 bg-white shadow-panel">
+          <div key={item.id} className="rounded-2xl border border-brand/10 bg-white/95 shadow-panel backdrop-blur">
             <button
               type="button"
               aria-expanded={isOpen}
               onClick={() => toggleItem(item.id)}
-              className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left transition hover:bg-bg-subtle"
+              className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left transition hover:bg-brand-soft"
             >
               <span className="text-lg font-semibold text-text-primary">{item.question}</span>
               <ChevronDown

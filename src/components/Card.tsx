@@ -37,14 +37,14 @@ const Card = ({ badge, title, description, icon, href }: CardContent) => {
   };
 
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card shadow-panel transition hover:-translate-y-1 hover:shadow-2xl">
-      <div className="bg-gradient-to-br from-brand via-[#f8a948] to-[#fbd39b] px-6 py-6">
-        <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-white backdrop-blur">
+    <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-brand/10 bg-card shadow-panel transition hover:-translate-y-1 hover:shadow-2xl">
+      <div className="bg-gradient-to-br from-brand-dark via-brand to-brand-light px-6 py-6 text-white">
+        <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 text-white backdrop-blur">
           <Icon className="h-8 w-8" aria-hidden />
         </div>
       </div>
       <div className="flex flex-1 flex-col gap-3 p-6">
-        <span className="inline-flex w-fit items-center rounded-full bg-bg-subtle px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-text-muted">
+        <span className="inline-flex w-fit items-center rounded-full bg-brand/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand">
           {badge}
         </span>
         <div className="space-y-2">
@@ -57,7 +57,7 @@ const Card = ({ badge, title, description, icon, href }: CardContent) => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-transparent bg-brand px-5 py-2 text-sm font-semibold text-white transition hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
+              className="inline-flex items-center gap-2 rounded-full border border-transparent bg-gradient-to-r from-brand-dark to-brand px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
             >
               <Download className="h-4 w-4" aria-hidden />
               Download
@@ -66,7 +66,7 @@ const Card = ({ badge, title, description, icon, href }: CardContent) => {
             <button
               type="button"
               onClick={handleClick}
-              className="inline-flex items-center gap-2 rounded-full border border-transparent bg-brand px-5 py-2 text-sm font-semibold text-white transition hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
+              className="inline-flex items-center gap-2 rounded-full border border-transparent bg-gradient-to-r from-brand-dark to-brand px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
             >
               <Download className="h-4 w-4" aria-hidden />
               Download

@@ -60,12 +60,12 @@ export const processSteps: ProcessStep[] = [
     title: 'Vorbereiten',
     description:
       'Zusammen identifizieren wir die förderfähigen Projekte und bereiten die notwendige Dokumentation vor.',
-    accent: '#F38B1B',
+    accent: '#3B82F6',
     visual: {
       type: 'image',
       src: '/images/step-vorbereiten.svg',
       caption: 'Vorbereiten – Materialien und Projektideen bündeln',
-      accent: '#F38B1B',
+      accent: '#3B82F6',
     },
   },
   {
@@ -86,12 +86,12 @@ export const processSteps: ProcessStep[] = [
     title: 'Freuen',
     description:
       'Nach 3 Monaten kann mit der Bewilligung die Steuererstattung beim Finanzamt eingeholt werden.',
-    accent: '#16A34A',
+    accent: '#1D4ED8',
     visual: {
       type: 'image',
       src: '/images/step-freuen.svg',
       caption: 'Freuen – Bewilligung und Steuererstattung sichern',
-      accent: '#16A34A',
+      accent: '#1D4ED8',
     },
   },
 ];

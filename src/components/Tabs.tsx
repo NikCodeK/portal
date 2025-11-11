@@ -49,7 +49,7 @@ const Tabs = ({ tabs }: TabsProps) => {
   return (
     <div className="space-y-6">
       <div className="relative">
-        <div className="flex w-full gap-6 overflow-x-auto border-b border-border/70 pb-1">
+        <div className="flex w-full gap-6 overflow-x-auto border-b border-brand/10 pb-1">
           {tabs.map((tab) => {
             const isActive = tab.id === activeTab;
             return (

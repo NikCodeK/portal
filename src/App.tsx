@@ -14,7 +14,7 @@ import {
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-bg-subtle text-text-primary">
+    <div className="min-h-screen bg-gradient-to-b from-bg-subtle via-white to-white text-text-primary">
       <div className="mx-auto flex w-full max-w-[1320px] flex-col gap-12 px-4 pb-16 pt-12 sm:px-8 md:px-12 lg:gap-16">
         <Hero {...heroContent} />
 
@@ -30,6 +30,8 @@ const App = () => {
           title="Informationsmaterial"
           intro={tabsDescription}
           className="rounded-2xl bg-card p-6 shadow-panel md:p-10 lg:p-12"
+          titleClassName="text-brand"
+          accentClassName="bg-brand"
         >
           <Tabs tabs={tabsData} />
         </Section>

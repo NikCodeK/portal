@@ -6,7 +6,7 @@ type HeroProps = {
 
 const Hero = ({ eyebrow, title, description }: HeroProps) => {
   return (
-    <section className="rounded-2xl bg-card px-6 py-8 text-left shadow-panel sm:px-8 md:px-12 md:py-10">
+    <section className="rounded-3xl border border-brand/15 bg-gradient-to-br from-brand-soft via-card to-white px-6 py-8 text-left shadow-panel sm:px-8 md:px-12 md:py-10">
       <div className="flex flex-wrap items-center justify-between gap-6">
         <div className="space-y-4">
           {eyebrow ? (
@@ -24,9 +24,9 @@ const Hero = ({ eyebrow, title, description }: HeroProps) => {
           ) : null}
         </div>
         <img
-          src="/images/logo.svg"
-          alt="Kundenportal Logo"
-          className="h-8 w-auto flex-shrink-0 sm:h-10"
+          src="/images/cleverfunding_logo_rgb.jpg"
+          alt="CleverFunding Logo"
+          className="h-14 w-auto flex-shrink-0 rounded-xl border border-white/50 bg-white/60 px-4 py-3 shadow-lg backdrop-blur-md sm:h-16 md:h-20"
           loading="lazy"
         />
       </div>

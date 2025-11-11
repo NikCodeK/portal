@@ -54,7 +54,7 @@ const ProcessSteps = ({ steps }: ProcessStepsProps) => {
 
   return (
     <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-      <div className="flex items-center justify-center rounded-2xl border border-border/60 bg-white p-6 shadow-panel md:px-10 md:py-8">
+      <div className="flex items-center justify-center rounded-2xl border border-brand/10 bg-white/90 p-6 shadow-panel backdrop-blur md:px-10 md:py-8">
         <div className="flex w-full items-center justify-center">{renderVisual()}</div>
       </div>
 
@@ -67,11 +67,11 @@ const ProcessSteps = ({ steps }: ProcessStepsProps) => {
               type="button"
               onClick={() => setActiveStepId(step.id)}
               aria-pressed={isActive}
-              className={`w-full rounded-2xl border border-transparent px-6 py-5 text-left transition hover:bg-white hover:shadow-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30 md:px-8 ${
+              className={`w-full rounded-2xl border border-transparent px-6 py-5 text-left transition hover:bg-brand/5 hover:shadow-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30 md:px-8 ${
                 isActive ? 'bg-white shadow-panel' : 'bg-transparent'
               }`}
               style={{
-                borderLeft: `4px solid ${isActive ? step.accent : '#E5E7EB'}`,
+                borderLeft: `4px solid ${isActive ? step.accent : '#B7E1E8'}`,
               }}
             >
               <div className="flex items-start gap-4">
