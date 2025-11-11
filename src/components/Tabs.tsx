@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import type { TabContent } from '../data/content';
+import type { CardContent, TabContent } from '../data/content';
 import SearchBar from './SearchBar';
 import CardGrid from './CardGrid';
 import EmptyState from './EmptyState';
@@ -7,6 +7,8 @@ import EmptyState from './EmptyState';
 type TabsProps = {
   tabs: TabContent[];
 };
+
+type AugmentedCard = CardContent & { tabId: TabContent['id']; tabLabel: string };
 
 const Tabs = ({ tabs }: TabsProps) => {
   const defaultTab = tabs[0]?.id ?? 'allgemein';
@@ -18,17 +20,31 @@ const Tabs = ({ tabs }: TabsProps) => {
     [activeTab, tabs],
   );
 
+  const allCards = useMemo<AugmentedCard[]>(
+    () =>
+      tabs.flatMap((tab) =>
+        tab.cards.map((card) => ({
+          ...card,
+          tabId: tab.id,
+          tabLabel: tab.label,
+        })),
+      ),
+    [tabs],
+  );
+
   const filteredCards = useMemo(() => {
     if (!activeContent) return [];
     if (!query.trim()) return activeContent.cards;
     const normalizedQuery = query.toLowerCase();
-    return activeContent.cards.filter(
-      (card) =>
-        card.title.toLowerCase().includes(normalizedQuery) ||
-        card.description.toLowerCase().includes(normalizedQuery) ||
-        card.badge.toLowerCase().includes(normalizedQuery),
-    );
-  }, [activeContent, query]);
+    return allCards
+      .filter(
+        (card) =>
+          card.title.toLowerCase().includes(normalizedQuery) ||
+          card.description.toLowerCase().includes(normalizedQuery) ||
+          card.badge.toLowerCase().includes(normalizedQuery),
+      )
+      .map<CardContent>(({ tabId, tabLabel, ...card }) => card);
+  }, [activeContent, allCards, query]);
 
   return (
     <div className="space-y-6">
@@ -55,6 +71,11 @@ const Tabs = ({ tabs }: TabsProps) => {
         </div>
       </div>
       <SearchBar value={query} onChange={setQuery} placeholder="Suchen" />
+      {query.trim() ? (
+        <p className="text-sm text-text-muted">
+          Gefundene Dokumente über alle Kategorien: {filteredCards.length}
+        </p>
+      ) : null}
       {filteredCards.length > 0 ? <CardGrid cards={filteredCards} /> : <EmptyState />}
     </div>
   );
