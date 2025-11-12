@@ -1,16 +1,73 @@
-# Zeitplan für die Antragserarbeitung
+<article>
+  <header>
+    <h1>Zeitplan für die Antragserarbeitung</h1>
+    <p>Der gesamte Prozess vom Kick-off bis zur Einreichung beim BSFZ dauert typischerweise 7–8 Wochen.</p>
+  </header>
 
-Der komplette Prozess vom Kick-off bis zur Einreichung beim BSFZ dauert in der Regel **7–8 Wochen**.
-Die folgenden Schritte dienen als Orientierung.
+  <table>
+    <thead>
+      <tr>
+        <th>Nr.</th>
+        <th>Phase</th>
+        <th>Verantwortlich</th>
+        <th>Max. Dauer</th>
+        <th>Inhalte</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><strong>Kick-off / Projektabgrenzung</strong></td>
+        <td>Projektmanagement &amp; Kundenteam</td>
+        <td>7 Tage</td>
+        <td>Rahmen klären, Ansprechpartner:innen festlegen, Unterlagen teilen.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><strong>Briefing Calls</strong></td>
+        <td>R&amp;D-Consultant &amp; Kundenteam</td>
+        <td>7 Tage</td>
+        <td>Überblick über Projektziele, Technologie, vorhandene Dokus.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><strong>Deep-Dive / Updates</strong></td>
+        <td>R&amp;D- und Financial-Consultants</td>
+        <td>7 Tage</td>
+        <td>Technischer Deep-Dive, Kalkulation, Update-Calls bei Bedarf.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><strong>Erarbeitung Antragsinhalte</strong></td>
+        <td>R&amp;D-Consultant</td>
+        <td>10 Tage</td>
+        <td>Erstellung von Antragstext, Gantt-Diagramm, Grafiken.</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><strong>Interne Prüfung &amp; Freigabe</strong></td>
+        <td>Kundenteam &amp; Financial-Consultant</td>
+        <td>4 Tage</td>
+        <td>Review der Texte, Zahlenprüfung, finale Freigabe.</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><strong>Übertragung ins BSFZ</strong></td>
+        <td>Projektmanagement</td>
+        <td>3 Tage</td>
+        <td>Inhalte in das Portal übertragen, Vollständigkeit checken.</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><strong>Einreichung mit ELSTER</strong></td>
+        <td>Projektmanagement &amp; Kundenteam</td>
+        <td>4 Tage</td>
+        <td>Letzter Check, ELSTER-Signatur, Versand an die BSFZ.</td>
+      </tr>
+    </tbody>
+  </table>
 
-| Nr. | Phase | Verantwortlich | Max. Dauer | Inhalte |
-|-----|-------|----------------|------------|---------|
-| 1 | **Kick-off / Projektabgrenzung** | Projektmanagement & Kundenteam | 7 Tage | Rahmen klären, Ansprechpartner:innen festlegen, Unterlagen teilen. |
-| 2 | **Briefing Calls** | R&D-Consultant & Kundenteam | 7 Tage | Überblick über Projektziele, Technologie, vorhandene Dokus. |
-| 3 | **Deep-Dive / Updates** | R&D- und Financial-Consultants | 7 Tage | Technischer Deep-Dive, Kalkulation, Update-Calls bei Bedarf. |
-| 4 | **Erarbeitung Antragsinhalte** | R&D-Consultant | 10 Tage | Erstellung von Antragstext, Gantt-Diagramm, Grafiken. |
-| 5 | **Interne Prüfung & Freigabe** | Kundenteam & Financial-Consultant | 4 Tage | Review der Texte, Zahlenprüfung, finale Freigabe. |
-| 6 | **Übertragung ins BSFZ** | Projektmanagement | 3 Tage | Inhalte in das Portal übertragen, Vollständigkeit checken. |
-| 7 | **Einreichung mit ELSTER** | Projektmanagement & Kundenteam | 4 Tage | Letzter Check, ELSTER-Signatur und Versand an die BSFZ. |
-
-**Hinweis:** Einzelne Schritte können parallel laufen (z. B. Kalkulation & Text). Transparente Kommunikation beschleunigt den Gesamtprozess erheblich.
+  <footer>
+    <p><strong>Hinweis:</strong> Kalkulation und Text können parallel laufen. Schnelle Kommunikation beschleunigt den Gesamtprozess.</p>
+  </footer>
+</article>

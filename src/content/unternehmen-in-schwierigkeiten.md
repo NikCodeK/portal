@@ -1,30 +1,86 @@
-# Unternehmen in Schwierigkeiten (UiS)
+<article>
+  <header>
+    <p>Hinweise zum Antrag auf Zertifizierung im Rahmen der Forschungszulage</p>
+    <p>
+      Quelle: BMF-Schreiben „Gewährung von Forschungszulage nach dem FZulG“ vom 7. Februar 2023 (Rn. 292–296a)
+    </p>
+  </header>
 
-Auszug aus den BSFZ-Hinweisen (BMF-Schreiben vom 7.2.2023) zur Anwendung der Allgemeinen Gruppenfreistellungsverordnung (AGVO).
+  <h2>Randnummer 292 – Grundsatz</h2>
+  <div class="highlight-block">
+    <p>
+      Gemäß Artikel 1 Absatz 4 Buchstabe c AGVO gilt die AGVO nicht für Beihilfen für Unternehmen in Schwierigkeiten.
+      Daher darf eine FZul nach dem FZulG grundsätzlich nicht für ein Unternehmen gewährt werden, welches
+      nach der beihilferechtlichen Definition ein Unternehmen in Schwierigkeiten ist.
+    </p>
+  </div>
 
-## 1. Grundsatz
-- Beihilfen nach dem Forschungszulagengesetz (FZulG) dürfen nicht an Unternehmen in Schwierigkeiten (UiS) vergeben werden (Art. 1 Abs. 4 c AGVO).
-- **Ausnahme:** Unternehmen, die am 31.12.2019 kein UiS waren, aber zwischen 01.01.2020 und 31.12.2021 zu einem UiS wurden, können für Ansprüche in diesem Zeitraum dennoch gefördert werden (Corona-Sonderregelung gem. VO (EU) 972/2020 und 1237/2021).
+  <h2>Randnummer 293 – Corona-Ausnahme</h2>
+  <p>
+    Mit der Verordnung (EU) Nr. 972/2020 vom 2. Juli 2020 und der Änderungsverordnung Nr. 1237/2021 vom 23. Juli 2021
+    können Unternehmen, die am 31. Dezember 2019 kein UiS waren, aber zwischen
+    1. Januar 2020 und 31. Dezember 2021 zu einem UiS wurden, weiterhin Beihilfen erhalten –
+    unabhängig von der Ursache der Schwierigkeiten.
+  </p>
 
-## 2. Definition nach Art. 2 Nr. 18 AGVO
-Ein Unternehmen gilt als „in Schwierigkeiten“, wenn mindestens eines der folgenden Kriterien erfüllt ist:
-1. **Kapitalverlust bei Kapitalgesellschaften:** Mehr als 50 % des gezeichneten Stammkapitals durch Verluste aufgezehrt (ausgenommen junge KMU < 3 Jahre).
-2. **Kapitalverlust bei haftungsdurchgriffenen Gesellschaften:** Mehr als 50 % der buchmäßigen Eigenmittel verloren (ausgenommen junge KMU < 3 Jahre).
-3. **Insolvenzreife:** Insolvenzverfahren läuft oder Voraussetzungen für Gläubigerantrag sind erfüllt.
-4. **Rettungs-/Umstrukturierungsbeihilfen:** Laufende Rückzahlungsverpflichtungen oder offener Umstrukturierungsplan.
-5. **Großunternehmen:** Verschuldungsgrad > 7,5 **und** Zinsdeckungsgrad (EBITDA) < 1,0 in den letzten zwei Jahren.
+  <h2>Randnummer 294 – Definition (Artikel 2 Nr. 18 AGVO)</h2>
+  <p>Ein Unternehmen ist UiS, wenn mindestens einer der folgenden Fälle vorliegt:</p>
+  <ul class="ui-list">
+    <li>
+      <strong>Kapitalgesellschaften:</strong> Mehr als die Hälfte des gezeichneten Stammkapitals ist
+      infolge aufgelaufener Verluste verlorengegangen.
+    </li>
+    <li>
+      <strong>Gesellschaften mit unbeschränkt haftenden Gesellschaftern:</strong> Mehr als die Hälfte der
+      buchmäßigen Eigenmittel ist verloren.
+    </li>
+    <li><strong>Insolvenz:</strong> Es läuft ein Verfahren oder die Voraussetzungen dafür liegen vor.</li>
+    <li>
+      <strong>Rettungs-/Umstrukturierungsbeihilfe:</strong> Darlehen/Garantien sind nicht getilgt bzw. der
+      Umstrukturierungsplan läuft noch.
+    </li>
+    <li>
+      <strong>Nicht-KMU:</strong> Verschuldungsgrad &gt; 7,5 und EBITDA-Zinsdeckungsgrad &lt; 1,0 (jeweils in den letzten zwei Jahren).
+    </li>
+  </ul>
 
-## 3. Besonderheiten
-- **Nachrangdarlehen:** Auch bei qualifiziertem Rangrücktritt werden sie als Fremdkapital gewertet (nur reine Liquidationsnachrangigkeit zählt als Eigenmittel).
-- **Verbunde:** Zunächst Einzelbetrachtung des beantragenden Unternehmens. Befindet es sich in Schwierigkeiten, besteht kein Anspruch – auch wenn der Konzern insgesamt solide aufgestellt ist. Zuführung von Eigenkapital bis zum Ende des Wirtschaftsjahres kann den Status heilen.
-- **Konsolidierte Abschlüsse:** Wird das Unternehmen voll konsolidiert, zählt der Konzernabschluss für die Beurteilung.
+  <h2>Randnummer 295 – Nachrangdarlehen</h2>
+  <p>
+    Gesellschafterdarlehen mit qualifiziertem Rangrücktritt gelten als Fremdkapital, unabhängig vom Darlehensgeber.
+    Nur wenn die Rückzahlung ausschließlich im Liquidationsfall erfolgt, werden sie eigenkapitalähnlich behandelt
+    (für Wandeldarlehen gilt dies in der Regel nicht).
+  </p>
 
-## 4. Stichtag für die Prüfung
-- Der Anspruch auf FZul entsteht mit Ablauf des Wirtschaftsjahres (§ 4 Abs. 1 S. 2 FZulG). Zu diesem Stichtag darf kein UiS vorliegen.
-- Für Wirtschaftsjahre 2020/2021 greift die o. g. Corona-Ausnahme, sofern der Status am 31.12.2019 unkritisch war.
-- Erst wenn ein Unternehmen am Ende eines Wirtschaftsjahres nicht mehr als UiS gilt, kann wieder FZul beantragt werden.
+  <h2>Randnummer 295a – Verbundene Unternehmen</h2>
+  <ul class="ui-list">
+    <li>Es erfolgt eine Einzelprüfung jedes anspruchsberechtigten Unternehmens.</li>
+    <li>Patronats- oder Absichtserklärungen ersetzen keine Eigenkapitalzuführung.</li>
+    <li>Eigenkapitalmaßnahmen müssen bis zum Ende des Wirtschaftsjahres wirken.</li>
+  </ul>
 
-## 5. Praxishinweise
-- Frühzeitig prüfen, ob die bilanziellen Kennzahlen die UiS-Kriterien erfüllen.
-- Bei Gefahr eines negativen Eigenkapitals rechtzeitig Kapitalmaßnahmen (z. B. Zuführung, Debt-Equity-Swap) einleiten.
-- Patronatserklärungen allein reichen nicht; ausschlaggebend ist die tatsächliche Eigenmittelstärkung bzw. Schuldenreduzierung.
+  <h2>Randnummer 295b – Konsolidierte Abschlüsse</h2>
+  <p>Bei voll konsolidierten Unternehmen entscheidet der konsolidierte Jahresabschluss über die UiS-Beurteilung.</p>
+
+  <h2>Randnummer 296 – Zeitpunkt der Prüfung</h2>
+  <p>
+    Tag der Beihilfegewährung = Zeitpunkt, an dem nach nationalem Recht ein Rechtsanspruch entsteht (§ 4 Abs. 1 Satz 2 FZulG:
+    Ablauf des Wirtschaftsjahres). Liegt zu diesem Stichtag UiS-Status vor, ist der Anspruch zu versagen.
+  </p>
+
+  <h2>Randnummer 296a – Sonderregel 2020/2021/2022</h2>
+  <ul class="ui-list">
+    <li>Ansprüche 2020/2021: möglich, wenn am 31.12.2019 kein UiS vorlag.</li>
+    <li>Wirtschaftsjahr 2022: Besteht UiS-Status, gibt es keinen Anspruch.</li>
+    <li>Nach Wegfall des UiS-Status kann FZul wieder beantragt werden.</li>
+  </ul>
+
+  <footer>
+    <strong>Checkliste</strong>
+    <ul>
+      <li>Bilanzkennzahlen dokumentieren.</li>
+      <li>Nachrangdarlehen rechtlich prüfen.</li>
+      <li>Eigenkapitalmaßnahmen frühzeitig planen.</li>
+      <li>Ausnahmezeitraum 2020/2021 berücksichtigen.</li>
+    </ul>
+  </footer>
+</article>

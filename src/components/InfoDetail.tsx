@@ -1,4 +1,5 @@
 import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { useMemo } from 'react';
 import type { CardContent } from '../data/content';
 
 type InfoDetailProps = {
@@ -7,32 +8,12 @@ type InfoDetailProps = {
   onBack: () => void;
 };
 
-const normalizeDetailBlocks = (raw: string) => {
-  const normalized = raw
-    .replace(/\r\n/g, '\n')
-    .replace(/●|•|▪|▫|‣|/g, '- ')
-    .replace(/\t+/g, ' ')
-    .replace(/ {2,}/g, ' ')
-    .trim();
-
-  return normalized
-    .split(/\n{2,}/)
-    .flatMap((block) => {
-      const trimmed = block.trim();
-      if (!trimmed) return [];
-      const stepMatches = trimmed.match(/Schritt\s+\d+\./gi);
-      if (stepMatches && stepMatches.length > 1) {
-        return trimmed
-          .split(/(?=Schritt\s+\d+\.)/i)
-          .map((part) => part.trim())
-          .filter(Boolean);
-      }
-      return [trimmed];
-    })
-    .filter(Boolean);
-};
-
 const InfoDetail = ({ card, category, onBack }: InfoDetailProps) => {
+  const isHtmlContent = useMemo(
+    () => card.detailContent?.trimStart().startsWith('<') ?? false,
+    [card.detailContent],
+  );
+
   return (
     <section className="space-y-6 rounded-3xl border border-brand/10 bg-card p-6 shadow-panel md:p-10 lg:p-16">
       <button
@@ -60,90 +41,14 @@ const InfoDetail = ({ card, category, onBack }: InfoDetailProps) => {
       </div>
 
       {card.detailContent ? (
-        <article className="space-y-4 rounded-2xl border border-brand/15 bg-brand-soft/40 p-6 text-text-primary">
-          {normalizeDetailBlocks(card.detailContent).map((block, index) => {
-            const lines = block
-              .split(/\n/)
-              .map((line) => line.trim())
-              .filter(Boolean);
-
-            const isOrdered = lines.every((line) => /^\d+[\.)]\s+/.test(line));
-            const isUnordered = lines.every((line) => /^[-*]\s+/.test(line));
-            const stepHeading = lines[0]?.match(/^Schritt\s+\d+\./i);
-            const markdownHeading = lines[0]?.match(/^(#{1,6})\s+(.*)$/);
-
-            if (isOrdered) {
-              return (
-                <ol key={index} className="list-decimal space-y-1 pl-5 text-sm leading-relaxed sm:text-base">
-                  {lines.map((line, idx) => (
-                    <li key={idx}>{line.replace(/^\d+[\.)]\s+/, '')}</li>
-                  ))}
-                </ol>
-              );
-            }
-
-            if (isUnordered) {
-              return (
-                <ul key={index} className="list-disc space-y-1 pl-5 text-sm leading-relaxed sm:text-base">
-                  {lines.map((line, idx) => (
-                    <li key={idx}>{line.replace(/^[-*]\s+/, '')}</li>
-                  ))}
-                </ul>
-              );
-            }
-
-            if (markdownHeading) {
-              const depth = Math.min(markdownHeading[1].length + 1, 6);
-              const text = markdownHeading[2];
-              if (depth <= 2) {
-                return (
-                  <h2 key={index} className="text-2xl font-semibold text-black sm:text-3xl">
-                    {text}
-                  </h2>
-                );
-              }
-              if (depth === 3) {
-                return (
-                  <h3 key={index} className="text-xl font-semibold text-black sm:text-2xl">
-                    {text}
-                  </h3>
-                );
-              }
-              if (depth === 4) {
-                return (
-                  <h4 key={index} className="text-lg font-semibold text-black">
-                    {text}
-                  </h4>
-                );
-              }
-              return (
-                <p key={index} className="text-sm font-semibold uppercase tracking-wide text-text-primary">
-                  {text}
-                </p>
-              );
-            }
-
-            if (stepHeading) {
-              return (
-                <div key={index} className="space-y-1 rounded-xl border border-brand/20 bg-white/70 p-4">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-btn-primary sm:text-base">
-                    {stepHeading[0]}
-                  </p>
-                  <p className="text-sm leading-relaxed text-text-primary sm:text-base">
-                    {lines.slice(1).join(' ').replace(/\s{2,}/g, ' ')}
-                  </p>
-                </div>
-              );
-            }
-
-            const paragraph = lines.join(' ').replace(/\s{2,}/g, ' ');
-            return (
-              <p key={index} className="text-sm leading-relaxed sm:text-base">
-                {paragraph}
-              </p>
-            );
-          })}
-        </article>
+        <article
+          className={`rounded-2xl border border-brand/15 bg-brand-soft/40 p-6 text-sm leading-relaxed text-text-primary sm:text-base ${
+            isHtmlContent
+              ? 'rich-content space-y-4 [&_.highlight-block]:rounded-xl [&_.highlight-block]:bg-white [&_.highlight-block]:p-4'
+              : 'whitespace-pre-wrap'
+          }`}
+          {...(isHtmlContent ? { dangerouslySetInnerHTML: { __html: card.detailContent } } : { children: card.detailContent })}
+        />
       ) : null}
 
       {card.href ? (

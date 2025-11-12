@@ -1,57 +1,81 @@
-# Gesamtinformation & Antragsablauf – Forschungszulage (Stand: Juni 2024)
+<article>
+  <header>
+    <h1>Gesamtinformation &amp; Antragsablauf – Forschungszulage</h1>
+    <p>Stand: Juni 2024</p>
+  </header>
 
-## Förderung von innovativen Projekten aller Art
-- Nicht rückzahlbare Zuschüsse unterstützen Unternehmen jeder Größe und Branche.
-- Förderung bis zu 3,5 Mio. € pro Jahr (KMU), 2,5 Mio. € pro Jahr (Großunternehmen).
-- Erfolgsquote Thierhoff Consulting: >95 %.
-- Zuschuss ist steuerfrei und bis zu vier Jahre rückwirkend abrufbar.
+  <h2>Förderung von innovativen Projekten aller Art</h2>
+  <ul class="ui-list">
+    <li>Nicht rückzahlbare Zuschüsse für Unternehmen jeder Größe und Branche.</li>
+    <li>Förderung bis zu 3,5 Mio. € pro Jahr (KMU) bzw. 2,5 Mio. € pro Jahr (Großunternehmen).</li>
+    <li>Erfolgsquote Thierhoff Consulting: &gt;95 %.</li>
+    <li>Zuschuss ist steuerfrei und bis zu vier Jahre rückwirkend abrufbar.</li>
+  </ul>
 
-## Eckpunkte des Förderprogramms
-1. **Keine Einschränkungen** – Rechtsanspruch für alle Unternehmen mit Sitz in Deutschland. Kein Branchenfokus, geprüft werden allein FuE-Kriterien.
-2. **Rückwirkende Fördermöglichkeit** – Projekte ab 01.01.2020 lassen sich rückwirkend fördern.
-3. **Hohe Förderquoten** – 25–35 % der FuE-Personalkosten sowie 15–24,5 % externer Leistungen erstattungsfähig.
+  <h2>Eckpunkte des Förderprogramms</h2>
+  <ol class="ui-list">
+    <li><strong>Keine Einschränkungen:</strong> Rechtsanspruch für alle Unternehmen mit Sitz in Deutschland; kein Branchenfokus.</li>
+    <li><strong>Rückwirkende Fördermöglichkeit:</strong> Projekte ab 01.01.2020 lassen sich nachträglich fördern.</li>
+    <li><strong>Hohe Förderquoten:</strong> 25–35 % FuE-Personalkosten und 15–24,5 % externen Leistungen erstattbar.</li>
+  </ol>
 
-## Fördervoraussetzungen
-### 1. Antragsteller
-- Sitz in Deutschland und gewinnorientierte Tätigkeit.
-- Keine Insolvenz oder drohende Zahlungsunfähigkeit.
+  <h2>Fördervoraussetzungen</h2>
+  <h3>1. Antragsteller</h3>
+  <ul class="ui-list">
+    <li>Sitz in Deutschland, gewinnorientierte Tätigkeit.</li>
+    <li>Keine Insolvenz oder drohende Zahlungsunfähigkeit.</li>
+  </ul>
 
-### 2. Projektnachweis
-- Projektstart nach dem 01.01.2020.
-- Technische Hemmnisse, Unwägbarkeiten oder Risiken sind nachzuweisen.
-- Keine reine Routine- oder Standardweiterentwicklung.
+  <h3>2. Projektnachweis</h3>
+  <ul class="ui-list">
+    <li>Projektstart nach dem 01.01.2020.</li>
+    <li>Technische Hemmnisse, Unwägbarkeiten oder Risiken müssen nachgewiesen werden.</li>
+    <li>Keine reine Routine- oder Standardweiterentwicklungen.</li>
+  </ul>
 
-## Ablauf des Fördermittelantrags
-1. **Kalkulation & Inhaltsaufbereitung** – Erstellung der Kalkulationsbasis und Antragstexte, Entlastung bei allen Formalitäten.
-2. **Einreichung** – Zertifizierungsantrag dauert mit Thierhoff Consulting ca. 4–8 Wochen (1,5–2 Arbeitstage Kundenaufwand). Behördenprüfung: 8–12 Wochen.
-3. **Abruf der Fördermittel** – Nach Zertifizierung Antrag über das Finanzamt, Auszahlung mit nächster Steuererklärung (jährlich je Kalenderjahr).
+  <h2>Ablauf des Fördermittelantrags</h2>
+  <ol class="ui-list">
+    <li><strong>Kalkulation &amp; Inhaltsaufbereitung:</strong> Erstellung der Kalkulationsbasis und Antragstexte, Entlastung bei Formalitäten.</li>
+    <li><strong>Einreichung:</strong> Mit Thierhoff Consulting ca. 4–8 Wochen (1,5–2 Arbeitstage Kundenaufwand); Behördenprüfung 8–12 Wochen.</li>
+    <li><strong>Abruf der Fördermittel:</strong> Nach Zertifizierung Einreichung über das Finanzamt, Auszahlung mit nächster Steuererklärung.</li>
+  </ol>
 
-## Was ist ein Projekt?
-- Klarer zeitlicher und finanzieller Rahmen (Tage bis mehrere Jahre).
-- Deutlicher Projektbeginn und -ende.
-- Fokus auf FuE mit technischem/inhaltlichem Risiko oder Hemmnissen.
-- Kann Neuentwicklungen, Features oder Teilprodukte umfassen.
-- Muss qualitativ/quantitativ abgegrenzt und dokumentiert werden.
-- Keine standardmäßigen Routineanpassungen.
+  <h2>Was ist ein Projekt?</h2>
+  <ul class="ui-list">
+    <li>Klarer zeitlicher und finanzieller Rahmen.</li>
+    <li>Deutlich definierter Projektbeginn und -ende.</li>
+    <li>FuE-Fokus mit technischem oder inhaltlichem Risiko/Hemmnis.</li>
+    <li>Neuentwicklungen, Teilprodukte oder Features mit dokumentierter Abgrenzung.</li>
+    <li>Keine standardmäßigen Routineanpassungen.</li>
+  </ul>
 
-## Projektbeispiele
-- **Cloud-Technologie:** Entwicklung sicherer und skalierbarer Cloud-Lösungen.
-- **Produktion:** Digitalisierung und KI-Automatisierung in Fertigungsbetrieben.
-- **Gesundheitssektor:** Digitale Lösungen für chronisch Kranke.
-- **E-Commerce:** KI-basierte Personalisierung im Online-Handel.
+  <h2>Projektbeispiele</h2>
+  <ul class="ui-list">
+    <li><strong>Cloud-Technologie:</strong> Sichere, skalierbare Lösungen.</li>
+    <li><strong>Produktion:</strong> Digitalisierung, KI-Automatisierung.</li>
+    <li><strong>Gesundheitssektor:</strong> Digitale Versorgung chronisch Kranker.</li>
+    <li><strong>E-Commerce:</strong> KI-basierte Personalisierung.</li>
+  </ul>
 
-## Änderungen durch das Wachstumschancengesetz (27.03.2024)
-- **Maximaler Zuschuss:** KMU bis 3,5 Mio. €, Großunternehmen bis 2,5 Mio. € je Kalenderjahr.
-- **Förderfähige Wirtschaftsgüter:** Abschreibungen beweglicher Wirtschaftsgüter sind abzugsfähig.
-- **Erhöhte Förderquote:** KMU erhalten 35 % (statt 25 %) auf FuE-Personalkosten und bis zu 24,5 % (statt 15 %) auf externe Leistungen.
+  <h2>Änderungen durch das Wachstumschancengesetz (27.03.2024)</h2>
+  <ul class="ui-list">
+    <li><strong>Maximaler Zuschuss:</strong> KMU bis 3,5 Mio. €, Großunternehmen bis 2,5 Mio. € je Kalenderjahr.</li>
+    <li><strong>Förderfähige Wirtschaftsgüter:</strong> Abschreibungen beweglicher Wirtschaftsgüter sind förderfähig.</li>
+    <li><strong>Erhöhte Förderquote:</strong> KMU erhalten 35 % auf FuE-Personalkosten und bis zu 24,5 % auf externe Leistungen.</li>
+  </ul>
 
-## Unser Beratungsprozess
-1. **Ansprechpartner zuweisen:** je ein Kontakt für formale/finanzielle Fragen und für technische Inhalte.
-2. **Projektauswahl:** Gemeinsam identifizieren wir geeignete FuE-Projekte seit 01.01.2020.
-3. **Vorbereitung & Antragstexte:** Fragenkatalog, Video-Call, Erstellung der Texte und Kalkulationen.
-4. **Finalisierung & Einreichung:** Überarbeitung, Zusammenstellung aller Informationen und gemeinsame Online-Beantragung (max. 30 Min. je Projekt).
+  <h2>Unser Beratungsprozess</h2>
+  <ol class="ui-list">
+    <li><strong>Ansprechpartner zuweisen:</strong> je ein Kontakt für Formalia/Finanzen und Technik.</li>
+    <li><strong>Projektauswahl:</strong> Gemeinsame Identifikation geeigneter FuE-Projekte seit 01.01.2020.</li>
+    <li><strong>Vorbereitung &amp; Antragstexte:</strong> Fragenkatalog, Video-Call, Erstellung der Texte und Kalkulationen.</li>
+    <li><strong>Finalisierung &amp; Einreichung:</strong> Überarbeitung, Zusammenstellung aller Informationen und gemeinsame Online-Beantragung (max. 30 Minuten je Projekt).</li>
+  </ol>
 
-## Kontakt
-**Thierhoff Consulting – Projektmanagement**  
-team@thierhoff-consulting.de  
-Juni 2024
+  <footer>
+    <strong>Kontakt</strong>
+    <p>Thierhoff Consulting – Projektmanagement</p>
+    <p><a href="mailto:team@thierhoff-consulting.de">team@thierhoff-consulting.de</a></p>
+    <p>Juni 2024</p>
+  </footer>
+</article>

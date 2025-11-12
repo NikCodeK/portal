@@ -1,57 +1,171 @@
-# Redaktionelles Beispiel „KI-Eichhörnchenfütterung“
+<article>
+  <header>
+    <h1>Redaktionelles Beispiel „KI-Eichhörnchenfütterung“</h1>
+    <p>Offizielles BSFZ-Beispiel für die textliche Ausarbeitung eines FZL-Antrags.</p>
+  </header>
 
-Das BSFZ stellt dieses Beispiel zur Verfügung, um zu zeigen, wie ein überzeugender Text für den
-Forschungszulagen-Antrag aufgebaut ist. Die wichtigsten Lehren sind nachfolgend zusammengefasst.
+  <section>
+    <h2>1. Titel des Vorhabens (max. 200 Zeichen)</h2>
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+      <div class="highlight-block">
+        <strong>Gute Beschreibung</strong>
+        <p>KI-basierter Fütterungsautomat zur Erkennung und Fütterung einzelner Individuen von Eichhörnchen.</p>
+      </div>
+      <div class="highlight-block bg-brand-soft/80">
+        <strong>Schlechte Beschreibung</strong>
+        <p>Entwicklung der Futterstation TX108A.</p>
+      </div>
+    </div>
+  </section>
 
----
+  <section>
+    <h2>2. Ziel des Vorhabens (max. 1.500 Zeichen)</h2>
+    <p>
+      Frage im Antrag: „Was ist das Ziel Ihres Vorhabens? Welche Herausforderung soll gelöst bzw. welche Wissenslücke geschlossen werden?“
+    </p>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div class="highlight-block">
+        <strong>Gute Beschreibung</strong>
+        <p>
+          KI-basierte Eichhörnchen-Fütterungsstation, die Individuen erkennt und gezielt Spezialfutter ausgibt.
+          Aufbau inkl. Sensoren, Kameras, Steuerung wird neu konzipiert; YOLO-Modelle werden angepasst,
+          um trotz minimaler äußerer Unterschiede eine schnelle Erkennung zu ermöglichen.
+        </p>
+        <p>
+          Hardware: Wildtierkamera (Tag) + IR-Kamera (Dämmerung) mit Bewegungssensoren.
+          Ablauf: Bewegungsdetektion → Bildaufnahme → Server → Deep-Learning-Auswertung →
+          Futterfreigabe bei ≥ 90 % Erkennungssicherheit.
+        </p>
+      </div>
+      <div class="highlight-block bg-brand-soft/80">
+        <strong>Schlechte Beschreibung</strong>
+        <p>
+          Allgemeine Projektbeschreibung ohne technische Details; Fokus auf Beliebtheit von Eichhörnchen und Marktziele.
+          Fehlende Darstellung der KI-Methodik (nur Schlagworte, keine Lösung der Wissenslücke).
+        </p>
+      </div>
+    </div>
+  </section>
 
-## 1. Titel des Vorhabens (max. 200 Zeichen)
-| Gute Beschreibung | Schlechte Beschreibung |
-|-------------------|------------------------|
-| **KI-basierter Fütterungsautomat zur Erkennung und Fütterung einzelner Individuen von Eichhörnchen** – vermittelt Ziel, Technologie und Nutzen. | **Entwicklung der Futterstation TX108A** – kryptisch, kein Hinweis auf Innovation oder Problem. |
+  <section>
+    <h2>3. Abgrenzung vom Stand der Technik (max. 500 Zeichen)</h2>
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+      <div class="highlight-block">
+        <strong>Gute Beschreibung</strong>
+        <p>
+          Mechanische Futterstationen öffnen nur bei Bedarf, unterscheiden keine Individuen.
+          Die Kombination aus Sensorik, Station und KI-Steuerung hebt sich deutlich ab.
+        </p>
+      </div>
+      <div class="highlight-block bg-brand-soft/80">
+        <strong>Schlechte Beschreibung</strong>
+        <p>
+          Allgemeine Marketingaussagen („hoch innovativ“), kein Vergleich zum Stand der Technik,
+          keine Beschreibung der eingesetzten Technologien.
+        </p>
+      </div>
+    </div>
+  </section>
 
-**Merke:** Titel sollen neugierig machen und die FuE-Herausforderung auf den Punkt bringen.
+  <section>
+    <h2>4. Beschreibung aller Arbeiten (max. 1.000 Zeichen)</h2>
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+      <div class="highlight-block">
+        <strong>Gute Beschreibung</strong>
+        <p>
+          Konzeption und Aufbau der Station; Testbilder mit Wildtierkamera + IR-Kamera,
+          Sensor-/Parameteroptimierung; Aufnahme und Annotation von 1.000 Bildern;
+          Entwicklung der YOLO-Modellelemente; Training/Validierung; Live-Tests; Anpassungen
+          unter verschiedenen Licht-/Wetterbedingungen.
+        </p>
+      </div>
+      <div class="highlight-block bg-brand-soft/80">
+        <strong>Schlechte Beschreibung</strong>
+        <p>
+          Allgemeine Aussagen („agile Entwicklung“, „zukunftsweisende KI-Software“),
+          keine konkreten Methoden oder Arbeitsschritte; Marketingformulierung statt technischer Beschreibung.
+        </p>
+      </div>
+    </div>
+  </section>
 
----
+  <section>
+    <h2>5. Wissenschaftliche, technische, methodische Risiken (max. 1.000 Zeichen)</h2>
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+      <div class="highlight-block">
+        <strong>Gute Beschreibung</strong>
+        <p>
+          Geringe Unterschiede zwischen Individuen erschweren die KI-Erkennung.
+          Fell/Ohrenpinsel ändern sich saisonal; Nachtaufnahmen liefern weniger Merkmale; Tiere verweilen < 5 s – System muss extrem schnell sein.
+        </p>
+      </div>
+      <div class="highlight-block bg-brand-soft/80">
+        <strong>Schlechte Beschreibung</strong>
+        <p>
+          Aufzählung unrealistischer Anforderungen (99 % Genauigkeit, CPU-Lernzeit etc.) ohne Bezug zum Projekt;
+          Risiken nach Projektabschluss; keine Verbindung zu den tatsächlichen Komponenten.
+        </p>
+      </div>
+    </div>
+  </section>
 
-## 2. Ziel des Vorhabens (max. 1.500 Zeichen)
-**Was das BSFZ lesen möchte**
-- Entwicklung einer autonomen KI-Fütterungsstation, die Individuen sicher erkennt und gezielt Spezialfutter ausgibt.
-- Hardware (Sensoren, Tag-/IR-Kameras, Steuerung) und Software (angepasste YOLO-Modelle) werden neu konzipiert.
-- Prozessbeschreibung: Bewegungsdetektion → Bildübertragung → Deep-Learning-Auswertung → Futterfreigabe ab 90 % Sicherheit.
-
-**Warum der Text überzeugt**
-- Technisches Ziel, Wissenslücke und Lösungsstrategie werden benannt.
-- Eingesetzte Methoden (Algorithmen, Komponenten) zeigen den FuE-Charakter.
-- Qualitätsanforderungen (≥ 90 % Erkennung) werden technisch begründet.
-
-**Negativbeispiel**
-- Fokus auf Marktpotenzial („Marktanteil +50 %“), unrealistische Kennzahlen (99,99 % in 3 s), keine Beschreibung der Technologie.
-- Wirtschaftliche Ziele sind für die Bewertung nicht entscheidend; es fehlen FuE-Herausforderungen.
-
----
-
-## 3. Abgrenzung vom Stand der Technik (max. 500 Zeichen)
-- Mechanische Futterstationen existieren, erkennen aber keine Individuen.
-- KI-Modelle anderer Tierarten sind nicht übertragbar, da Eichhörnchen kaum unterscheidbare Merkmale haben.
-- Neuartig ist die Kombination aus Sensorik, Datenpipeline und speziell trainierten Modellen zur Individualerkennung.
-
----
-
-## 4. Arbeitsprogramm – Beispielhafte Struktur
-1. **Datenerhebung & Annotation** – Aufbau eines Bild-/Sensor-Datasets, Definition von Qualitätsmetriken.
-2. **Modellentwicklung** – Anpassung eines YOLO-Ansatzes, Training und Validierung für Individuen-Erkennung.
-3. **Hardware/Steuerung** – Entwicklung der Futterstation inkl. Bewegungssensorik, Aktorik, Netzwerkmodul.
-4. **Integration & Test** – End-to-end Szenarien, Robustheitstests, Optimierung der Fütterungslogik.
-
----
-
-## 5. Tipps für eigene Projektexte
-- **Technik zuerst:** Ziele, Technologien, Algorithmen und Risiken beschreiben – nicht das Marketing.
-- **Neuartigkeit belegen:** Den Stand der Technik zum Projektstart nennen (mit Jahreszahlen).
-- **Risiken sichtbar machen:** Welche Hypothesen werden geprüft? Wo besteht Unsicherheit?
-- **Konkrete Zahlen:** Zielgrößen (Genauigkeit, Laufzeit, Qualitätsanforderungen) nennen und technisch herleiten.
-- **Gute vs. schlechte Beispiele nutzen:** Sie zeigen, welche Argumentationslinie das BSFZ erwartet.
-
-Dieses Beispiel eignet sich als Vorlage, um eigene Texte strukturiert aufzubauen und die Gutachter:innen gezielt
-durch Ziel, Neuartigkeit und Risiko zu führen.
+  <section>
+    <h2>6. Tabellarischer Arbeitsplan (Gantt)</h2>
+    <p><em>Gute Struktur (Auszug, jeweils &lt; 100 Zeichen):</em></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Arbeitspaket</th>
+          <th>Zeitraum</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Konzeption &amp; Aufbau Fütterungsstation</td>
+          <td>04.2020 – 07.2020</td>
+        </tr>
+        <tr>
+          <td>Testbilder aufnehmen (IR + Wildtierkamera)</td>
+          <td>07.2020 – 08.2020</td>
+        </tr>
+        <tr>
+          <td>Sensorparameter anpassen</td>
+          <td>08.2020 – 10.2020</td>
+        </tr>
+        <tr>
+          <td>1.000 Bilder von 50 Eichhörnchen aufnehmen</td>
+          <td>10.2020 – 12.2020</td>
+        </tr>
+        <tr>
+          <td>Bildannotation</td>
+          <td>10.2020 – 12.2020</td>
+        </tr>
+        <tr>
+          <td>YOLO-Modellelemente entwickeln</td>
+          <td>07.2020 – 12.2020</td>
+        </tr>
+        <tr>
+          <td>Training &amp; Validierung (Identifikation)</td>
+          <td>01.2021 – 04.2021</td>
+        </tr>
+        <tr>
+          <td>Live-Test Algorithmus</td>
+          <td>05.2021 – 07.2021</td>
+        </tr>
+        <tr>
+          <td>Gewichtungsanpassungen (Merkmale)</td>
+          <td>05.2021 – 07.2021</td>
+        </tr>
+        <tr>
+          <td>Station Tests (Wetter/Tag/Nacht)</td>
+          <td>07.2021 – 08.2021</td>
+        </tr>
+        <tr>
+          <td>Anpassungen an Bedingungen</td>
+          <td>08.2021 – 12.2021</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><em>Schlechte Struktur:</em> Projektmanagement, Vermarktung, Patentierung etc. ohne FuE-Bezug; kryptische Abkürzungen; fehlende Methodik.</p>
+  </section>
+</article>

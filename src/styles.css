@@ -18,3 +18,48 @@ body {
     radial-gradient(circle at 80% 0%, rgba(244, 244, 244, 0.8), transparent 40%);
   background-color: #DBF2F4;
 }
+
+.rich-content h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.rich-content h3,
+.rich-content h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.rich-content p {
+  margin-bottom: 0.75rem;
+}
+
+.rich-content ul {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+
+.rich-content ul li {
+  margin-bottom: 0.35rem;
+}
+
+.rich-content .highlight-block {
+  border-left: 4px solid #51bdcb;
+}
+
+.rich-content footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.rich-content footer strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
