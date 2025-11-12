@@ -60,12 +60,12 @@ export const processSteps: ProcessStep[] = [
     title: 'Vorbereiten',
     description:
       'Zusammen identifizieren wir die förderfähigen Projekte und bereiten die notwendige Dokumentation vor.',
-    accent: '#3B82F6',
+    accent: '#51BDCB',
     visual: {
       type: 'image',
       src: '/images/step-vorbereiten.svg',
       caption: 'Vorbereiten – Materialien und Projektideen bündeln',
-      accent: '#3B82F6',
+      accent: '#51BDCB',
     },
   },
   {
@@ -73,12 +73,12 @@ export const processSteps: ProcessStep[] = [
     title: 'Beantragen',
     description:
       'Ein Antrag wird bei der Bescheinigungsstelle Forschungszulage eingereicht.',
-    accent: '#2563EB',
+    accent: '#2E95A4',
     visual: {
       type: 'image',
       src: '/images/step-beantragen.svg',
       caption: 'Beantragen – Einreichung bei der BSFZ',
-      accent: '#2563EB',
+      accent: '#2E95A4',
     },
   },
   {
@@ -86,12 +86,12 @@ export const processSteps: ProcessStep[] = [
     title: 'Freuen',
     description:
       'Nach 3 Monaten kann mit der Bewilligung die Steuererstattung beim Finanzamt eingeholt werden.',
-    accent: '#1D4ED8',
+    accent: '#1C5E6C',
     visual: {
       type: 'image',
       src: '/images/step-freuen.svg',
       caption: 'Freuen – Bewilligung und Steuererstattung sichern',
-      accent: '#1D4ED8',
+      accent: '#1C5E6C',
     },
   },
 ];

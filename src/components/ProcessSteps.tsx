@@ -61,17 +61,18 @@ const ProcessSteps = ({ steps }: ProcessStepsProps) => {
       <div className="space-y-4">
         {steps.map((step, index) => {
           const isActive = step.id === activeStep?.id;
+          const borderColor = isActive ? step.accent : withAlpha(step.accent, '33');
           return (
             <button
               key={step.id}
               type="button"
               onClick={() => setActiveStepId(step.id)}
               aria-pressed={isActive}
-              className={`w-full rounded-2xl border border-transparent px-6 py-5 text-left transition hover:bg-brand/5 hover:shadow-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30 md:px-8 ${
-                isActive ? 'bg-white shadow-panel' : 'bg-transparent'
-              }`}
+              className="w-full rounded-2xl border px-6 py-5 text-left transition hover:shadow-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30 md:px-8"
               style={{
-                borderLeft: `4px solid ${isActive ? step.accent : '#B7E1E8'}`,
+                borderColor,
+                borderLeft: `4px solid ${isActive ? step.accent : withAlpha(step.accent, '55')}`,
+                backgroundColor: isActive ? withAlpha(step.accent, '1A') : withAlpha(step.accent, '08'),
               }}
             >
               <div className="flex items-start gap-4">

@@ -58,11 +58,10 @@ const Tabs = ({ tabs }: TabsProps) => {
                 type="button"
                 aria-pressed={isActive}
                 onClick={() => setActiveTab(tab.id)}
-                className={`pb-3 text-sm font-semibold uppercase tracking-wide transition whitespace-nowrap ${
-                  isActive
-                    ? 'border-b-2 border-brand text-brand'
-                    : 'border-b-2 border-transparent text-text-muted hover:text-text-primary'
+                className={`border-b-2 pb-3 text-sm font-semibold uppercase tracking-wide transition whitespace-nowrap ${
+                  isActive ? 'text-btn-primary' : 'border-transparent text-text-muted hover:text-text-primary'
                 }`}
+                style={isActive ? { borderColor: '#F18511', color: '#F18511' } : undefined}
               >
                 {tab.label}
               </button>

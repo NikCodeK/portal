@@ -7,17 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: '#3B82F6',
-        'brand-dark': '#1D4ED8',
-        'brand-deep': '#0B2C8A',
-        'brand-light': '#93C5FD',
-        'brand-soft': '#E1EDFF',
-        'text-primary': '#0F172A',
-        'text-muted': '#4C5D7A',
+        brand: '#51BDCB',
+        'brand-dark': '#2E95A4',
+        'brand-light': '#A7E6ED',
+        'brand-soft': '#DBF2F4',
+        'text-primary': '#111111',
+        'text-muted': '#4F5D66',
         bg: '#FFFFFF',
-        'bg-subtle': '#F3F6FF',
+        'bg-subtle': '#F4F4F4',
         card: '#FFFFFF',
-        border: '#C5D6FF',
+        border: '#CFE3E7',
+        'btn-primary': '#F18511',
+        'btn-primary-dark': '#D9740E',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

@@ -31,6 +31,8 @@ const iconMap: Record<CardIconName, ComponentType<{ className?: string }>> = {
 
 const Card = ({ badge, title, description, icon, href }: CardContent) => {
   const Icon = iconMap[icon];
+  const normalizedBadge = badge.toLowerCase();
+  const highlightBadge = normalizedBadge.includes('generelle information');
 
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
@@ -44,7 +46,11 @@ const Card = ({ badge, title, description, icon, href }: CardContent) => {
         </div>
       </div>
       <div className="flex flex-1 flex-col gap-3 p-6">
-        <span className="inline-flex w-fit items-center rounded-full bg-brand/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand">
+        <span
+          className={`inline-flex w-fit items-center rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-wide ${
+            highlightBadge ? 'bg-btn-primary/10 text-btn-primary' : 'bg-brand/15 text-brand'
+          }`}
+        >
           {badge}
         </span>
         <div className="space-y-2">
@@ -57,7 +63,7 @@ const Card = ({ badge, title, description, icon, href }: CardContent) => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-transparent bg-gradient-to-r from-brand-dark to-brand px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
+              className="inline-flex items-center gap-2 rounded-full border border-transparent bg-btn-primary px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-btn-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
             >
               <Download className="h-4 w-4" aria-hidden />
               Download
@@ -66,7 +72,7 @@ const Card = ({ badge, title, description, icon, href }: CardContent) => {
             <button
               type="button"
               onClick={handleClick}
-              className="inline-flex items-center gap-2 rounded-full border border-transparent bg-gradient-to-r from-brand-dark to-brand px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
+              className="inline-flex items-center gap-2 rounded-full border border-transparent bg-btn-primary px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-btn-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
             >
               <Download className="h-4 w-4" aria-hidden />
               Download

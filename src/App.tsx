@@ -22,6 +22,7 @@ const App = () => {
           title="Das Antragsverfahren im Überblick"
           intro={processIntro}
           className="rounded-2xl bg-card p-6 shadow-panel md:p-10 lg:p-12"
+          showAccent={false}
         >
           <ProcessSteps steps={processSteps} />
         </Section>
@@ -30,6 +31,7 @@ const App = () => {
           title="Informationsmaterial"
           intro={tabsDescription}
           className="rounded-2xl bg-card p-6 shadow-panel md:p-10 lg:p-12"
+          showAccent={false}
         >
           <Tabs tabs={tabsData} />
         </Section>
@@ -37,6 +39,7 @@ const App = () => {
         <Section
           title="Häufig gestellte Fragen"
           className="rounded-2xl bg-card p-6 shadow-panel md:p-10 lg:p-12"
+          showAccent={false}
         >
           <Accordion items={faqItems} />
         </Section>

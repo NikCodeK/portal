@@ -6,7 +6,7 @@ type HeroProps = {
 
 const Hero = ({ eyebrow, title, description }: HeroProps) => {
   return (
-    <section className="rounded-3xl border border-brand/15 bg-gradient-to-br from-brand-soft via-card to-white px-6 py-8 text-left shadow-panel sm:px-8 md:px-12 md:py-10">
+    <section className="rounded-3xl border border-brand/20 bg-gradient-to-br from-brand-soft via-white to-bg-subtle px-6 py-8 text-left shadow-panel sm:px-8 md:px-12 md:py-10">
       <div className="flex flex-wrap items-center justify-between gap-6">
         <div className="space-y-4">
           {eyebrow ? (

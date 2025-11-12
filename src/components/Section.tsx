@@ -8,6 +8,7 @@ type SectionProps = {
   className?: string;
   titleClassName?: string;
   accentClassName?: string;
+  showAccent?: boolean;
 };
 
 const Section = ({
@@ -17,6 +18,7 @@ const Section = ({
   className,
   titleClassName,
   accentClassName,
+  showAccent = true,
 }: SectionProps) => {
   return (
     <section className={clsx('space-y-6', className)}>
@@ -25,7 +27,9 @@ const Section = ({
           <h2 className={clsx('text-4xl font-semibold md:text-5xl', titleClassName ?? 'text-black')}>
             {title}
           </h2>
-          <div className={clsx('h-1 w-16 rounded-full', accentClassName ?? 'bg-black')} />
+          {showAccent ? (
+            <div className={clsx('h-1 w-16 rounded-full', accentClassName ?? 'bg-brand')} />
+          ) : null}
         </div>
         {intro ? (
           <p className="text-lg leading-relaxed text-text-muted">{intro}</p>
