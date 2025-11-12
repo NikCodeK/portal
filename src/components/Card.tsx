@@ -1,5 +1,5 @@
-import type { ComponentType, MouseEvent } from 'react';
-import { Download } from 'lucide-react';
+import type { ComponentType } from 'react';
+import { ArrowRight } from 'lucide-react';
 import { type CardContent, type CardIconName } from '../data/content';
 import {
   Award,
@@ -29,14 +29,13 @@ const iconMap: Record<CardIconName, ComponentType<{ className?: string }>> = {
   Award,
 };
 
-const Card = ({ badge, title, description, icon, href }: CardContent) => {
+const Card = ({ id, badge, title, description, icon }: CardContent) => {
   const Icon = iconMap[icon];
   const normalizedBadge = badge.toLowerCase();
-  const highlightBadge = normalizedBadge.includes('generelle information');
-
-  const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault();
-  };
+  const highlightBadge = ['generelle information', 'information vor antrag', 'information nach bescheid'].some(
+    (phrase) => normalizedBadge.includes(phrase),
+  );
+  const detailHref = `#/info/${encodeURIComponent(id)}`;
 
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-brand/10 bg-card shadow-panel transition hover:-translate-y-1 hover:shadow-2xl">
@@ -58,26 +57,13 @@ const Card = ({ badge, title, description, icon, href }: CardContent) => {
           <p className="text-sm leading-relaxed text-text-muted sm:text-base break-words">{description}</p>
         </div>
         <div className="mt-auto pt-2">
-          {href ? (
-            <a
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-transparent bg-btn-primary px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-btn-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
-            >
-              <Download className="h-4 w-4" aria-hidden />
-              Download
-            </a>
-          ) : (
-            <button
-              type="button"
-              onClick={handleClick}
-              className="inline-flex items-center gap-2 rounded-full border border-transparent bg-btn-primary px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-btn-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
-            >
-              <Download className="h-4 w-4" aria-hidden />
-              Download
-            </button>
-          )}
+          <a
+            href={detailHref}
+            className="inline-flex items-center gap-2 rounded-full border border-transparent bg-btn-primary px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-btn-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
+          >
+            Mehr Informationen
+            <ArrowRight className="h-4 w-4" aria-hidden />
+          </a>
         </div>
       </div>
     </article>
