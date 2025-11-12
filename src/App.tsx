@@ -30,8 +30,6 @@ const App = () => {
           title="Informationsmaterial"
           intro={tabsDescription}
           className="rounded-2xl bg-card p-6 shadow-panel md:p-10 lg:p-12"
-          titleClassName="text-brand"
-          accentClassName="bg-brand"
         >
           <Tabs tabs={tabsData} />
         </Section>

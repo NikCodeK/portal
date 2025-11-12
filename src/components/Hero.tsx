@@ -14,7 +14,7 @@ const Hero = ({ eyebrow, title, description }: HeroProps) => {
               {eyebrow}
             </span>
           ) : null}
-          <p className="text-3xl font-semibold leading-tight text-brand md:text-5xl">
+          <p className="text-3xl font-semibold leading-tight text-black md:text-5xl">
             {title}
           </p>
           {description ? (
