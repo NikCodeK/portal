@@ -29,13 +29,23 @@ const iconMap: Record<CardIconName, ComponentType<{ className?: string }>> = {
   Award,
 };
 
-const Card = ({ id, badge, title, description, icon }: CardContent) => {
+type CardProps = CardContent & {
+  onNavigate?: (cardId: string) => void;
+};
+
+const Card = ({ id, badge, title, description, icon, onNavigate }: CardProps) => {
   const Icon = iconMap[icon];
   const normalizedBadge = badge.toLowerCase();
   const highlightBadge = ['generelle information', 'information vor antrag', 'information nach bescheid'].some(
     (phrase) => normalizedBadge.includes(phrase),
   );
-  const detailHref = `#/info/${encodeURIComponent(id)}`;
+  const handleNavigate = () => {
+    if (onNavigate) {
+      onNavigate(id);
+    } else {
+      window.location.hash = `#/info/${encodeURIComponent(id)}`;
+    }
+  };
 
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-brand/10 bg-card shadow-panel transition hover:-translate-y-1 hover:shadow-2xl">
@@ -57,13 +67,14 @@ const Card = ({ id, badge, title, description, icon }: CardContent) => {
           <p className="text-sm leading-relaxed text-text-muted sm:text-base break-words">{description}</p>
         </div>
         <div className="mt-auto pt-2">
-          <a
-            href={detailHref}
+          <button
+            type="button"
+            onClick={handleNavigate}
             className="inline-flex items-center gap-2 rounded-full border border-transparent bg-btn-primary px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-btn-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
           >
             Mehr Informationen
             <ArrowRight className="h-4 w-4" aria-hidden />
-          </a>
+          </button>
         </div>
       </div>
     </article>
